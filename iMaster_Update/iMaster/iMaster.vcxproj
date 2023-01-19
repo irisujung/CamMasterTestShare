@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{DBFB8BE6-1180-40E5-A3BB-920DC6367B4A}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>iMaster</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\pDongle\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\pDongle\;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>$(SolutionDir)$(Platform)\$(Configuration)\iODB.lib;$(SolutionDir)$(Platform)\$(Configuration)\iArchiveIF.lib;$(SolutionDir)$(Platform)\$(Configuration)\iCommonIF.lib;$(SolutionDir)$(Platform)\$(Configuration)\iDxDraw.lib;$(SolutionDir)$(Platform)\$(Configuration)\iUtilities.lib;$(SolutionDir)$(Platform)\$(Configuration)\iProcess.lib;$(SolutionDir)$(Platform)\$(Configuration)\iTinyXML.lib;$(SolutionDir)$(Platform)\$(Configuration)\PDongle.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../x64/Debug/</AdditionalLibraryDirectories>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(SolutionDir)$(Platform)\$(Configuration)\iODB.lib;$(SolutionDir)$(Platform)\$(Configuration)\iArchiveIF.lib;$(SolutionDir)$(Platform)\$(Configuration)\iCommonIF.lib;$(SolutionDir)$(Platform)\$(Configuration)\iDxDraw.lib;$(SolutionDir)$(Platform)\$(Configuration)\iUtilities.lib;$(SolutionDir)$(Platform)\$(Configuration)\iProcess.lib;$(SolutionDir)$(Platform)\$(Configuration)\PDongle.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../x64/Release/</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_ExLib\FarPoint_Dll\fpspread_dll.h" />
+    <ClInclude Include="..\_ExLib\FarPoint_Dll\SSDLL.H" />
+    <ClInclude Include="..\_ExLib\FarPoint_Dll\Ssdllmfc.h" />
+    <ClInclude Include="..\_ExLib\FarPoint_Dll\SSDLLX.H" />
+    <ClInclude Include="..\_ExLib\FarPoint_Dll\SSOCX.H" />
+    <ClInclude Include="CAlignMaskEditDlg.h" />
+    <ClInclude Include="CamInfoFormView.h" />
+    <ClInclude Include="CFeatureAdd_Arc_SubDlg.h" />
+    <ClInclude Include="CFeatureAdd_Line_SubDlg.h" />
+    <ClInclude Include="CFeatureAdd_Pad_SubDlg.h" />
+    <ClInclude Include="CFeatureAdd_Surface_SubDlg.h" />
+    <ClInclude Include="CFeatureAdd_TP_SubDlg.h" />
+    <ClInclude Include="CFeatureEdit_AddDlg.h" />
+    <ClInclude Include="CFeatureEdit_CopyDlg.h" />
+    <ClInclude Include="CFeatureEdit_DeleteDlg.h" />
+    <ClInclude Include="CFeatureEdit_FeatureDlg.h" />
+    <ClInclude Include="CFeatureEdit_MoveDlg.h" />
+    <ClInclude Include="CFeatureEdit_ResizeDlg.h" />
+    <ClInclude Include="CFeatureEdit_RotateDlg.h" />
+    <ClInclude Include="CFeatureEdit_SymbolSelectDlg.h" />
+    <ClInclude Include="CHistogram.h" />
+    <ClInclude Include="CMakeAttributeDlg.h" />
+    <ClInclude Include="CMakeSymbolDlg.h" />
+    <ClInclude Include="CSaveAsDlg.h" />
+    <ClInclude Include="CSelectSymbolDlg.h" />
+    <ClInclude Include="DataDefine_Color.h" />
+    <ClInclude Include="ExtractLayerDlg.h" />
+    <ClInclude Include="FeatureEditFormView.h" />
+    <ClInclude Include="iMasterCommon.h" />
+    <ClInclude Include="JobInfoFormView.h" />
+    <ClInclude Include="FormViewDocPane.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="iMaster.h" />
+    <ClInclude Include="iMasterDoc.h" />
+    <ClInclude Include="iMasterView.h" />
+    <ClInclude Include="LayerInfoFormView.h" />
+    <ClInclude Include="Lib\ButtonEx.h" />
+    <ClInclude Include="Lib\ColumnTreeCtrl.h" />
+    <ClInclude Include="Lib\CustomListCtrl.h" />
+    <ClInclude Include="Lib\D3DXBase .h" />
+    <ClInclude Include="Lib\DDS.h" />
+    <ClInclude Include="Lib\FileTreeCtrl.h" />
+    <ClInclude Include="Lib\HeaderCtrlEx.h" />
+    <ClInclude Include="Lib\InPlaceCombo.h" />
+    <ClInclude Include="Lib\InPlaceEdit.h" />
+    <ClInclude Include="Lib\ListBoxEx.h" />
+    <ClInclude Include="Lib\MFCStatusBarEx.h" />
+    <ClInclude Include="Lib\RoundProgress.h" />
+    <ClInclude Include="Lib\SpinBox.h" />
+    <ClInclude Include="Lib\StaticPanel.h" />
+    <ClInclude Include="LogViewDocPane.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MakeMasterDlg.h" />
+    <ClInclude Include="MeasureInfoFormView.h" />
+    <ClInclude Include="MeasureInfoFormView_V2.h" />
+    <ClInclude Include="MiniMapFormView_V2.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="ProgressDlg.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SettingsFormView.h" />
+    <ClInclude Include="SystemSpec.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="udpsock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\_ExLib\FarPoint_Dll\fpspread_dll.cpp" />
+    <ClCompile Include="..\_ExLib\FarPoint_Dll\Ssdllmfc.cpp" />
+    <ClCompile Include="CAlignMaskEditDlg.cpp" />
+    <ClCompile Include="CamInfoFormView.cpp" />
+    <ClCompile Include="CFeatureAdd_Arc_SubDlg.cpp" />
+    <ClCompile Include="CFeatureAdd_Line_SubDlg.cpp" />
+    <ClCompile Include="CFeatureAdd_Pad_SubDlg.cpp" />
+    <ClCompile Include="CFeatureAdd_Surface_SubDlg.cpp" />
+    <ClCompile Include="CFeatureAdd_TP_SubDlg.cpp" />
+    <ClCompile Include="CFeatureEdit_AddDlg.cpp" />
+    <ClCompile Include="CFeatureEdit_CopyDlg.cpp" />
+    <ClCompile Include="CFeatureEdit_DeleteDlg.cpp" />
+    <ClCompile Include="CFeatureEdit_FeatureDlg.cpp" />
+    <ClCompile Include="CFeatureEdit_MoveDlg.cpp" />
+    <ClCompile Include="CFeatureEdit_ResizeDlg.cpp" />
+    <ClCompile Include="CFeatureEdit_RotateDlg.cpp" />
+    <ClCompile Include="CFeatureEdit_SymbolSelectDlg.cpp" />
+    <ClCompile Include="CHistogram.cpp" />
+    <ClCompile Include="CMakeAttributeDlg.cpp" />
+    <ClCompile Include="CMakeSymbolDlg.cpp" />
+    <ClCompile Include="CSaveAsDlg.cpp" />
+    <ClCompile Include="CSelectSymbolDlg.cpp" />
+    <ClCompile Include="ExtractLayerDlg.cpp" />
+    <ClCompile Include="FeatureEditFormView.cpp" />
+    <ClCompile Include="iMasterCommon.cpp" />
+    <ClCompile Include="JobInfoFormView.cpp" />
+    <ClCompile Include="FormViewDocPane.cpp" />
+    <ClCompile Include="iMaster.cpp" />
+    <ClCompile Include="iMasterDoc.cpp" />
+    <ClCompile Include="iMasterView.cpp" />
+    <ClCompile Include="LayerInfoFormView.cpp" />
+    <ClCompile Include="Lib\ButtonEx.cpp" />
+    <ClCompile Include="Lib\ColumnTreeCtrl.cpp" />
+    <ClCompile Include="Lib\CustomListCtrl.cpp" />
+    <ClCompile Include="Lib\D3DXBase.cpp" />
+    <ClCompile Include="Lib\FileTreeCtrl.cpp" />
+    <ClCompile Include="Lib\HeaderCtrlEx.cpp" />
+    <ClCompile Include="Lib\InPlaceCombo.cpp" />
+    <ClCompile Include="Lib\InPlaceEdit.cpp" />
+    <ClCompile Include="Lib\ListBoxEx.cpp" />
+    <ClCompile Include="Lib\MFCStatusBarEx.cpp" />
+    <ClCompile Include="Lib\RoundProgress.cpp" />
+    <ClCompile Include="Lib\SpinBox.cpp" />
+    <ClCompile Include="Lib\StaticPanel.cpp" />
+    <ClCompile Include="LogViewDocPane.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MakeMasterDlg.cpp" />
+    <ClCompile Include="MeasureInfoFormView.cpp" />
+    <ClCompile Include="MeasureInfoFormView_V2.cpp" />
+    <ClCompile Include="MiniMapFormView_V2.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ProgressDlg.cpp" />
+    <ClCompile Include="SettingsFormView.cpp" />
+    <ClCompile Include="SystemSpec.cpp" />
+    <ClCompile Include="udpsock.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="iMaster.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Lib\TREEBTNS.bmp" />
+    <Image Include="res\180_rotation.ico" />
+    <Image Include="res\270_rotation.ico" />
+    <Image Include="res\360_rotation.ico" />
+    <Image Include="res\90_rotation.ico" />
+    <Image Include="res\alignment.ico" />
+    <Image Include="res\align_rgn.ico" />
+    <Image Include="res\AreaScan.ico" />
+    <Image Include="res\back_side.ico" />
+    <Image Include="res\bitmap3.bmp" />
+    <Image Include="res\Butterfly.bmp" />
+    <Image Include="res\CellData.ico" />
+    <Image Include="res\Cell_Area.ico" />
+    <Image Include="res\Chamfered Rectangle.bmp" />
+    <Image Include="res\ChamfereRect.bmp" />
+    <Image Include="res\Circle.bmp" />
+    <Image Include="res\classview.bmp" />
+    <Image Include="res\classview_hc.bmp" />
+    <Image Include="res\class_view.ico" />
+    <Image Include="res\class_view_hc.ico" />
+    <Image Include="res\corp.bmp" />
+    <Image Include="res\depth.ico" />
+    <Image Include="res\Diamond.bmp" />
+    <Image Include="res\draw_rgn.ico" />
+    <Image Include="res\edit_add.ico" />
+    <Image Include="res\edit_delete.ico" />
+    <Image Include="res\edit_mode.ico" />
+    <Image Include="res\edit_move.ico" />
+    <Image Include="res\edit_resize.ico" />
+    <Image Include="res\Ellipse.bmp" />
+    <Image Include="res\empty.ico" />
+    <Image Include="res\explorer.bmp" />
+    <Image Include="res\explorer_hc.bmp" />
+    <Image Include="res\fileview.bmp" />
+    <Image Include="res\fileview_hc.bmp" />
+    <Image Include="res\file_view.ico" />
+    <Image Include="res\file_view_hc.ico" />
+    <Image Include="res\fov_hjigjag_icon.ico" />
+    <Image Include="res\fov_hscan_icon.ico" />
+    <Image Include="res\fov_icon.ico" />
+    <Image Include="res\fov_vjigjag_icon.ico" />
+    <Image Include="res\fov_vscan_icon.ico" />
+    <Image Include="res\front_side.ico" />
+    <Image Include="res\Half Oval.bmp" />
+    <Image Include="res\Hole.bmp" />
+    <Image Include="res\Horizontal Hexagon.bmp" />
+    <Image Include="res\iMaster.ico" />
+    <Image Include="res\iMasterDoc.ico" />
+    <Image Include="res\LineScan.ico" />
+    <Image Include="res\Load_ICON.ico" />
+    <Image Include="res\load_layer_ICON.ico" />
+    <Image Include="res\Log_ICON.ico" />
+    <Image Include="res\Map_ICON.ico" />
+    <Image Include="res\mask_rgn.ico" />
+    <Image Include="res\MasterImage.ico" />
+    <Image Include="res\menuimages.bmp" />
+    <Image Include="res\menuimages_hc.bmp" />
+    <Image Include="res\Minimap.ico" />
+    <Image Include="res\mirror.ico" />
+    <Image Include="res\mirror_v.ico" />
+    <Image Include="res\Moire.bmp" />
+    <Image Include="res\Octagon.bmp" />
+    <Image Include="res\output_wnd.ico" />
+    <Image Include="res\output_wnd_hc.ico" />
+    <Image Include="res\Oval.bmp" />
+    <Image Include="res\PanelMode.ico" />
+    <Image Include="res\panel_rgn.ico" />
+    <Image Include="res\postSR.ico" />
+    <Image Include="res\preSR.ico" />
+    <Image Include="res\preview.ico" />
+    <Image Include="res\profile.ico" />
+    <Image Include="res\prohibit.ico" />
+    <Image Include="res\properties.bmp" />
+    <Image Include="res\properties_hc.bmp" />
+    <Image Include="res\properties_wnd.ico" />
+    <Image Include="res\properties_wnd_hc.ico" />
+    <Image Include="res\Rectangle.bmp" />
+    <Image Include="res\RectangularThermal.bmp" />
+    <Image Include="res\RectangularThermalOpenCorners.bmp" />
+    <Image Include="res\refresh.ico" />
+    <Image Include="res\Round Donut.bmp" />
+    <Image Include="res\Round Thermal (Rounded).bmp" />
+    <Image Include="res\Rounded Rectangle.bmp" />
+    <Image Include="res\RoundedRect.bmp" />
+    <Image Include="res\RoundThermalSquared.bmp" />
+    <Image Include="res\Ruler.ico" />
+    <Image Include="res\Save.ico" />
+    <Image Include="res\SaveAs.ico" />
+    <Image Include="res\SelectLayer.ico" />
+    <Image Include="res\SettingImage.ico" />
+    <Image Include="res\show_boundary.ico" />
+    <Image Include="res\smallfeature.bmp" />
+    <Image Include="res\small_add_feature.bmp" />
+    <Image Include="res\sort.bmp" />
+    <Image Include="res\sort_hc.bmp" />
+    <Image Include="res\Square Butterfly.bmp" />
+    <Image Include="res\Square Donut.bmp" />
+    <Image Include="res\Square Thermal (Open Corners).bmp" />
+    <Image Include="res\Square Thermal.bmp" />
+    <Image Include="res\Square-Round Thermal.bmp" />
+    <Image Include="res\Square.bmp" />
+    <Image Include="res\stepRepeat.ico" />
+    <Image Include="res\strip_rgn.ico" />
+    <Image Include="res\thickness.ico" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\transfer.ico" />
+    <Image Include="res\Triangle.bmp" />
+    <Image Include="res\unit_rgn.ico" />
+    <Image Include="res\userimages.bmp" />
+    <Image Include="res\Version.ico" />
+    <Image Include="res\Vertical Hexagon.bmp" />
+    <Image Include="res\View_ICON.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\iMaster.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iDxDraw\iDxDraw.vcxproj">
+      <Project>{ff75a1f6-0a5b-445d-b9f1-f81f4e6e7165}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

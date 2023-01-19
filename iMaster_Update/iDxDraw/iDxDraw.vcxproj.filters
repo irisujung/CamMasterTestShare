@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="02.DxDraw">
+      <UniqueIdentifier>{f2eb19f2-537a-416b-9b31-6181dc6dba8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="02.DxDraw\SaveLayer">
+      <UniqueIdentifier>{ac83d6df-a782-4692-aa04-5e75d638ca61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.DxDraw\SaveLayer\RegionFunc">
+      <UniqueIdentifier>{645cbe80-0c17-48e5-8127-d864b56d8c70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Minimap">
+      <UniqueIdentifier>{a31f840c-6b84-4f5d-8343-bbf384f0b6f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="iDxDraw.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DxDraw\CDirect_Base.cpp">
+      <Filter>02.DxDraw</Filter>
+    </ClCompile>
+    <ClCompile Include="DxDraw\CDirectView.cpp">
+      <Filter>02.DxDraw</Filter>
+    </ClCompile>
+    <ClCompile Include="CDrawProfile.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDrawLayer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDrawFunction.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDrawHighlightShowFunc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DxDraw\CBackBuffer.cpp">
+      <Filter>02.DxDraw</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditFunction.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDrawEdit_Temp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDrawManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDrawFov.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DxDraw\CSaveLayer.cpp">
+      <Filter>02.DxDraw\SaveLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="DxDraw\CSaveLayer_AOI.cpp">
+      <Filter>02.DxDraw\SaveLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="DxDraw\CSaveLayer_NSIS.cpp">
+      <Filter>02.DxDraw\SaveLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="MakeRegion\CMakeRegionFunction.cpp">
+      <Filter>02.DxDraw\SaveLayer\RegionFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="MakeRegion\CHalconFunction.cpp">
+      <Filter>02.DxDraw\SaveLayer\RegionFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveLayerOperation.cpp">
+      <Filter>02.DxDraw\SaveLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="CDrawMakePoint.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CFeatureFilterFunction.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDrawMakeGeo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDrawMinimap.cpp">
+      <Filter>03.Minimap</Filter>
+    </ClCompile>
+    <ClCompile Include="CFeatureData.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iDxDraw.def">
+      <Filter>소스 파일</Filter>
+    </None>
+    <None Include="res\iDxDraw.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="iDxDraw.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DxDraw\CDirect_Base.h">
+      <Filter>02.DxDraw</Filter>
+    </ClInclude>
+    <ClInclude Include="DxDraw\CDirectView.h">
+      <Filter>02.DxDraw</Filter>
+    </ClInclude>
+    <ClInclude Include="DxDraw\Def_Viewer.h">
+      <Filter>02.DxDraw</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawProfile.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawLayer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawFunction.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawHighlightShowFunc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtil.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DxDraw\CBackBuffer.h">
+      <Filter>02.DxDraw</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditFunction.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawEdit_Temp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawFov.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DxDraw\CSaveLayer.h">
+      <Filter>02.DxDraw\SaveLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="DxDraw\CSaveLayer_AOI.h">
+      <Filter>02.DxDraw\SaveLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="DxDraw\CSaveLayer_NSIS.h">
+      <Filter>02.DxDraw\SaveLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="MakeRegion\CMakeRegionFunction.h">
+      <Filter>02.DxDraw\SaveLayer\RegionFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="MakeRegion\Def_MakeRegion.h">
+      <Filter>02.DxDraw\SaveLayer\RegionFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="MakeRegion\CHalconFunction.h">
+      <Filter>02.DxDraw\SaveLayer\RegionFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveLayerInit.h">
+      <Filter>02.DxDraw\SaveLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveLayerOperation.h">
+      <Filter>02.DxDraw\SaveLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawMakePoint.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CFeatureFilterFunction.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawMakeGeo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawMinimap.h">
+      <Filter>03.Minimap</Filter>
+    </ClInclude>
+    <ClInclude Include="CFeatureData.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="iDxDraw.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
